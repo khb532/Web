@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet Demo</title>
+</head>
+<body>
+    <h1><a href="https://docs.emmet.io/cheat-sheet/">Emmet Doc</a></h1>
+    <main>
+        <section>
+            <h2>Child</h2>
+            <p>
+                Child : ><br>
+                nav>ul>li 꺽괄호로 계층설정
+                <nav>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </nav>
+            </p>
+        </section>
+
+        <section>
+            <h2>Sibling</h2>
+            <p>
+                Sibling : +<br>
+                두 개 이상의 요소를 합쳐 형제 요소를 만듦<br>
+                div+p+bq
+                <div></div>
+                <p></p>
+                <blockquote></blockquote>
+            </p>
+        </section>
+
+        <section>
+            <h2>Climb-up</h2>
+            <p>
+                Climb-up : ^<br>
+                div+div>p>span+em^bq<br>
+                span+em이 p안에서 생성되지만, p 밖에 bq를 만듦(상승이동)
+                <div></div>
+                <div>
+                    <p><span></span><em></em></p>
+                    <blockquote></blockquote>
+                </div>
+            </p>
+        </section>
+
+        <section>
+            <h2>Multiplication</h2>
+            <p>
+                Multiplication : * <br>
+                ul>li*5 반복생성<br>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>Numberling</h2>
+            <p>
+                Numberling : $ <br>
+                ul>li.item$*5 <br>
+                item뒤에 $자리에서 번호를 1~5까지 생성
+            </p>
+        </section>
+        <section>
+            <h2></h2>
+            <p></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p></p>
+        </section>
+    </main>
+    
+</body>
+</html>

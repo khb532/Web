@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Html Note
+    </title>
+</head>
+
+<body>
+    <h1>HTML Note</h1>
+    !+Tab : html 양식 생성 단축키<br>
+    &lt;html&gt; : 이 문서의 최상위 루트 요소; 페이지의 모든 다른 요소들은 루트 요소를 근간으로 함<br>
+    &lt;head&gt; : head에는 웹페이지상에는 보이지않는 메타데이터 요소; 웹 페이지와 스크립트에 관한 CSS, JS, font, icons 등의 속성값과 같은 모든 메타데이터 정보를 담음<br>
+    &lt;title&gt; : 브라우저 상단의 탭 이름; 검색엔진에서 title을 기반으로 검색후 결과를 링크생성함<br>
+    &lt;body&gt; : 나머지 모든 요소들을 포함<br>
+    &lt;!--comment--&gt; : 주석<br>
+
+    <h2>Chicken</h2>
+
+    <p>
+        The <b>chicken</b> (Gallus domesticus) is a large and round short-winged bird, domesticated from the red
+        junglefowl of Southeast Asia around 8,000 years ago. Most chickens are raised for food, providing meat and eggs;
+        others are kept as pets or for <a href="https://en.wikipedia.org/wiki/Cockfight">cockfighting.</a> 
+    </p>
+    <p>
+        Chickens are common and widespread domestic animals, with a total population of 23.7 billion as of 2018, and an
+        annual production of more than 50 billion birds. A hen bred for laying can produce over 300 eggs per year. There
+        are numerous cultural references to chickens in folklore, religion, and literature.
+    </p>
+
+    <h2>ul순서없음/ol순서있음, li태그</h2>
+    <!-- ul, ol끼리 중첩가능 -->
+    <ul>
+        <li>상위항목ul
+            <ul>
+                <li>하위항목</li>
+                <li>하위항목</li>
+            </ul>
+        </li>
+        <li>상위순서항목ol
+            <ol>
+                <li>하위순서항목</li>
+                <li>하위순서항목</li>
+            </ol>
+        </li>
+        
+    </ul>
+
+    <h2>HyperLink</h2>
+    <ul>
+        <li><a href="about.html">About Page</a></li>
+        <li><a href="http://google.com">Google Link</a></li>
+    </ul>
+
+    <h2>Image</h2>
+    <!-- alt 속성은 이미지를 불러오기 실패했을때 대체되는 텍스트, 스크린 리더가 alt값을 소리내어 읽음 -->
+    <img src="picture/dove.jpg" width="300" alt="Dove Picture">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Microcosm_of_London_Plate_018_-_Royal_Cock_Pit_%28colour%29.jpg/220px-Microcosm_of_London_Plate_018_-_Royal_Cock_Pit_%28colour%29.jpg">
+    <br><br><br>
+    <div>
+        <h2>div / span</h2>
+        <a href="href example01"></a>
+        <a href="href example02"></a>
+        div로 나누어진 블록<br>
+        블록 : 한구역 전체<br>
+        인라인 : text줄내에서 그룹화<br>
+        <span>span 별도로 일부 text를 그룹화::강조?</span>
+    </div>
+    <hr><h2>hr/br/sup/sub</h2>
+    <div>
+        <p>
+        hr 태그 : 줄<br>
+        br 태그 : 줄바꿈<br>
+        sup/sub : 윗첨자 아랫첨자
+            <ul>
+                <li>CO<sup>2</sup></li>
+                <li>H<sub>2</sub>O</li>
+            </ul>
+        </p>
+    </div>
+
+<hr>
+<div>
+    <h2><a href="entitycode.com"></a>HTML Entity</h2>
+    <p>
+        일부 특수문자는 html의 예약문자로 동작하므로 entity 코드 사용<br>
+        entity는 <b>&amp;</b>로 시작, <b>&amp;</b> <b>&#35;</b> <b>숫자코드</b> <b>&#59</b> 또는 <b>&amp;</b> <b>code</b> <b>&#59</b><br>
+        1 < 6 : entity 미사용, 오류가능<br>
+        1 <b>&lt;</b> 6 : entity &amp;lt&#59;
+
+    </p>
+</div>
+
+<div>
+    <h2>Table</h2>
+    <p>
+        <ul>
+            <li>table : 표 시작</li>
+            <li>td : table data? 1개의 셀 데이터</li>
+            <li>tr : table row, 표는 여러층의 tr이 쌓인모양, tr아래에 복수의 td셀</li>
+            <li>th : 표의 카테고리</li>
+            <li>thead,tbody,tfoot : 표의 section역할</li>
+            <li>colspan/rowspan : 셀 합치기, col 열끼리 / row 행끼리</li>
+            <li>colgroup</li>
+            <li>caption</li>
+        </ul>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">th01</th>
+                <th colspan="2">th02</th>
+                <th rowspan="2">th03</th>
+            </tr>
+            <tr>
+                <th>th02-1</th>
+                <th>th02-2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>td00</td>
+                <td>td01</td>
+                <td>td02</td>
+                <td>td03</td>
+            </tr>
+            <tr>
+                <td>td10</td>
+                <td>td11</td>
+                <td>td12</td>
+                <td>td13</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<section>
+    <h2><a href="Form.html">Form</a></h2>
+    <p>
+        <form action=""></form>
+        <ul>
+            <li>action&#40;&#8786;목적지&#41;이라는 속성을 사용하여 해당 요청이 어디로 가는지 제어</li>
+            <li>form 액세스는 입력 내용을 그룹화한 뒤 지정된 목적지로 제출</li>
+            <li>form을 제출하면 HTTP 요청 전송</li>
+            <li>어떤 유형의 HTTP 메소드를 사용할지 제어</li>
+        </ul>
+    </p>
+    <h3>&lt;Input&gt;</h3>
+    <p>
+        attribute<br>
+        <ul>
+            <li>type : 어떤 input을 사용할것인지</li>
+            <ul>
+                <li>checkbox</li>
+                <li>text</li>
+                <li>password</li>
+                <li>id : label의 for값과 일치해야함</li>
+            </ul>
+            <li>placeholder : 빈 input에 표시할 텍스트</li>
+        </ul>
+    </p>
+    <h3>&lt;label&gt;</h3>
+    <p>
+        attribute<br>
+        <ul>
+            <li>for : 속성값과 일치하는 id를 가진 input태그와 연결</li>
+        </ul>
+    </p>
+</section>
+
+
+</body>
+
+</html>

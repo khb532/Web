@@ -153,12 +153,43 @@
         <ul>
             <li>type : 어떤 input을 사용할것인지</li>
             <ul>
-                <li>checkbox</li>
                 <li>text</li>
                 <li>password</li>
-                <li>id : label의 for값과 일치해야함</li>
+                <li>checkbox</li>
+                <ul><li>동시에 여러개 선택 O</li></ul>
+                <li>Radio Button</li>
+                    <ul>
+                        <li>동일name으로 여러 radio를 묶고 하나만 선택하게함</li>
+                        <li>value로 차별</li>
+                    </ul>
+                <li>Select</li>
+                <ul>
+                    <li>option 태그로 하위 메뉴 생성</li>
+                    <ul><li>value : 넘길 데이터값 지정</li></ul>
+                </ul>
+                <li>Range</li>
+                <ul>
+                    <li>min/max : 최소/최대값</li>
+                    <li>value : 초기값</li>
+                    <li>step : 수 단위</li>
+                </ul>
+                <li>Number</li>
+                <li>Text Area</li>
+                <ul>
+                    <li>rows/cols : 사이즈 지정</li>
+                </ul>
             </ul>
+            <li>id : label의 for값과 일치해야함, 숫자로시작할수없음</li>
+            <li>name : Form에서 데이터를 넘길때 name으로 레이블링해서 넘김</li>
+                <ul><li>검색창의 검색어</li><li>id,password 등</li></ul>
+            
             <li>placeholder : 빈 input에 표시할 텍스트</li>
+            <li>value : name으로 레이블링할 값 지정</li>
+            <li>required : Validation, 필수입력 요구</li>
+                <ul>
+                    <li>일부 input type들은 required 내장 ex&#41 email</li>
+                </ul>
+            <li>minlength/maxlength : 최대 최소 글자수/문자열길이</li>
         </ul>
     </p><br>
     <p><h3>&lt;label&gt;</h3>
@@ -175,7 +206,6 @@
                     <li>submit : Form 안에서의 디폴트 타입, Form의 action값을 따름</li>
                     <li>button : 단순 버튼으로 동작</li>
                 </ul>
-            <li></li>
         </ul>
     </p>
 </section>
